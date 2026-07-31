@@ -1,1 +1,0 @@
-// Global JavaScript entry point.

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiguelChat | AI Portfolio Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/miguelchat.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <a href="{{ url_for('home') }}">
+                ← Back to Portfolio
+            </a>
+
+        </div>
+
+        <h1>
+            MiguelChat
+        </h1>
+
+        <p>
+            AI Portfolio Assistant
+        </p>
+
+    </header>
+
+    <main>
+
+        <section class="chat-layout">
+
+            <!-- Sidebar -->
+
+            <aside class="sidebar">
+
+                <h2>
+                    About MiguelChat
+                </h2>
+
+                <p>
+
+                    MiguelChat is an AI assistant trained on Miguel Medina's
+                    professional portfolio.
+
+                </p>
+
+                <h3>
+                    Ask about:
+                </h3>
+
+                <ul>
+
+                    <li>Experience</li>
+
+                    <li>Projects</li>
+
+                    <li>Technical Skills</li>
+
+                    <li>Finance</li>
+
+                    <li>Teaching</li>
+
+                    <li>Python</li>
+
+                    <li>Artificial Intelligence</li>
+
+                    <li>Career Goals</li>
+
+                </ul>
+
+            </aside>
+
+            <!-- Chat -->
+
+            <section class="chat-window">
+
+                <div
+                    id="chat-messages"
+                    class="chat-messages"
+                >
+
+                    <div class="assistant-message">
+
+                        👋 Hello!
+
+                        <br><br>
+
+                        I'm MiguelChat.
+
+                        <br><br>
+
+                        Ask me anything about Miguel's experience,
+                        software projects, technical skills,
+                        education, or career.
+
+                    </div>
+
+                    <div
+                        id="typing-indicator"
+                        class="assistant-message"
+                        style="display: none;"
+                    >
+
+                        MiguelChat is thinking...
+
+                    </div>
+
+                </div>
+
+                <div class="chat-input">
+
+                    <input
+
+                        id="user-input"
+
+                        type="text"
+
+                        placeholder="Ask MiguelChat something..."
+
+                        autocomplete="off"
+
+                    >
+
+                    <button
+                        id="send-button"
+                        type="button"
+                    >
+
+                        Send
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='js/miguelchat.js') }}"></script>
+
+</body>
+
+</html>

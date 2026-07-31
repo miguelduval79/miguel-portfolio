@@ -1,1 +1,0 @@
-body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--color-bg);color:var(--color-text);line-height:1.5}main{padding:2rem}nav,footer{padding:1rem 2rem}nav{display:flex;gap:1rem;border-bottom:1px solid #e5e7eb}footer{border-top:1px solid #e5e7eb;color:var(--color-muted)}
