@@ -3,11 +3,13 @@ from dotenv import load_dotenv
 import os
 import requests
 
+
 load_dotenv()
 
 app = Flask(__name__)
 
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+
 
 with open("knowledge.md", "r", encoding="utf-8") as file:
     KNOWLEDGE = file.read()
@@ -23,12 +25,26 @@ def miguelchat():
     return render_template("miguelchat.html")
 
 
+@app.route("/accounting")
+def accounting():
+    return render_template("accounting.html")
+
+
 @app.route("/chat", methods=["POST"])
 def chat():
+    data = request.get_json(silent=True) or {}
 
-    data = request.get_json()
+    user_message = data.get("message", "").strip()
 
-    user_message = data.get("message", "")
+    if not user_message:
+        return jsonify({
+            "reply": "Please enter a question."
+        }), 400
+
+    if not DEEPSEEK_API_KEY:
+        return jsonify({
+            "reply": "The DeepSeek API key is not configured."
+        }), 500
 
     headers = {
         "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
@@ -64,24 +80,36 @@ Rules:
         "max_tokens": 1000
     }
 
-    response = requests.post(
-        "https://api.deepseek.com/chat/completions",
-        headers=headers,
-        json=payload
-    )
+    try:
+        response = requests.post(
+            "https://api.deepseek.com/chat/completions",
+            headers=headers,
+            json=payload,
+            timeout=30
+        )
 
-    if response.status_code != 200:
+        if response.status_code != 200:
+            return jsonify({
+                "reply": f"DeepSeek Error: {response.text}"
+            }), response.status_code
+
+        result = response.json()
+
+        reply = result["choices"][0]["message"]["content"]
+
         return jsonify({
-            "reply": f"DeepSeek Error: {response.text}"
+            "reply": reply
         })
 
-    result = response.json()
+    except requests.RequestException:
+        return jsonify({
+            "reply": "MiguelChat could not connect to the AI service."
+        }), 503
 
-    reply = result["choices"][0]["message"]["content"]
-
-    return jsonify({
-        "reply": reply
-    })
+    except (KeyError, IndexError, TypeError):
+        return jsonify({
+            "reply": "MiguelChat received an unexpected response."
+        }), 500
 
 
 if __name__ == "__main__":

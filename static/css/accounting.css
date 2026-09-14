@@ -1,0 +1,749 @@
+/* ---------- General ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fa;
+    color: #253247;
+    line-height: 1.6;
+}
+
+a {
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* ---------- Header and Navigation ---------- */
+
+.page-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    padding: 0 5%;
+
+    background: #17243a;
+    box-shadow: 0 3px 12px rgba(20, 34, 56, 0.14);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+.site-name {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-name:hover {
+    color: #93c5fd;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+nav .portfolio-link {
+    padding: 9px 15px;
+
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+}
+
+nav .portfolio-link:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #17243a;
+}
+
+
+/* ---------- Main Layout ---------- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 32px;
+    scroll-margin-top: 100px;
+}
+
+.content-section,
+.fund-section,
+.additional-section {
+    padding: 55px 45px;
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(20, 34, 56, 0.06);
+}
+
+.section-label {
+    margin-bottom: 12px;
+
+    color: #2563eb;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-heading {
+    margin-bottom: 34px;
+}
+
+.section-heading h2 {
+    max-width: 760px;
+    margin-bottom: 14px;
+
+    color: #17243a;
+    font-size: 2.15rem;
+    line-height: 1.25;
+}
+
+.section-heading > p:last-child {
+    max-width: 760px;
+    color: #5e6b7c;
+}
+
+
+/* ---------- Hero ---------- */
+
+.finance-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(250px, 0.55fr);
+    align-items: center;
+    gap: 55px;
+
+    padding: 65px 55px;
+
+    background: #eaf2ff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(20, 34, 56, 0.09);
+}
+
+.hero-content h1 {
+    max-width: 720px;
+    margin-bottom: 22px;
+
+    color: #17243a;
+    font-size: 3rem;
+    line-height: 1.15;
+}
+
+.hero-description {
+    max-width: 720px;
+    margin-bottom: 16px;
+
+    color: #425168;
+    font-size: 1.05rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.primary-button,
+.secondary-button,
+.contact-button {
+    display: inline-block;
+
+    padding: 12px 21px;
+
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-button {
+    background: #17243a;
+    color: #ffffff;
+}
+
+.primary-button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 2px solid #17243a;
+    color: #17243a;
+}
+
+.secondary-button:hover {
+    background: #17243a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Career Highlights ---------- */
+
+.career-highlights {
+    display: grid;
+    gap: 14px;
+}
+
+.highlight-card {
+    padding: 20px 22px;
+
+    background: #ffffff;
+    border-left: 4px solid #2563eb;
+    border-radius: 9px;
+    box-shadow: 0 5px 16px rgba(20, 34, 56, 0.07);
+}
+
+.highlight-number {
+    margin-bottom: 4px;
+
+    color: #17243a;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.highlight-card p:last-child {
+    color: #5e6b7c;
+    font-size: 0.93rem;
+}
+
+
+/* ---------- Expertise ---------- */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.expertise-card {
+    position: relative;
+
+    padding: 27px 24px;
+
+    background: #f7f9fc;
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+}
+
+.expertise-card:hover {
+    border-color: #93b4ec;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 34, 56, 0.08);
+}
+
+.card-accent {
+    width: 38px;
+    height: 4px;
+    margin-bottom: 20px;
+
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+.expertise-card h3 {
+    margin-bottom: 12px;
+
+    color: #17243a;
+    font-size: 1.25rem;
+}
+
+.expertise-card > p {
+    margin-bottom: 17px;
+    color: #5e6b7c;
+}
+
+.expertise-card ul {
+    padding-left: 21px;
+}
+
+.expertise-card li {
+    margin-bottom: 7px;
+}
+
+.expertise-card li::marker {
+    color: #2563eb;
+}
+
+
+/* ---------- Fund Types ---------- */
+
+.fund-section {
+    background: #17243a;
+}
+
+.fund-section .section-label {
+    color: #93c5fd;
+}
+
+.fund-section .section-heading h2 {
+    color: #ffffff;
+}
+
+.fund-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.fund-card {
+    padding: 25px;
+
+    background: #22324b;
+    border: 1px solid #344762;
+    border-radius: 12px;
+}
+
+.fund-card h3 {
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.fund-card p {
+    color: #d7e0ec;
+}
+
+
+/* ---------- Experience Timeline ---------- */
+
+.experience-timeline {
+    position: relative;
+
+    margin-top: 15px;
+    padding-left: 31px;
+}
+
+.experience-timeline::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 7px;
+
+    width: 2px;
+
+    background: #dce4ee;
+}
+
+.experience-role {
+    position: relative;
+    padding: 0 0 42px 25px;
+}
+
+.experience-role:last-child {
+    padding-bottom: 0;
+}
+
+.experience-role::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: -31px;
+
+    width: 14px;
+    height: 14px;
+
+    background: #2563eb;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.role-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+.role-heading h3 {
+    margin-bottom: 3px;
+
+    color: #17243a;
+    font-size: 1.35rem;
+}
+
+.company-name {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.company-location {
+    color: #5e6b7c;
+    font-size: 0.93rem;
+}
+
+.role-period {
+    flex-shrink: 0;
+
+    padding: 6px 12px;
+
+    background: #eaf2ff;
+    border-radius: 20px;
+
+    color: #1d4ed8;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.experience-role ul {
+    padding-left: 22px;
+}
+
+.experience-role li {
+    margin-bottom: 8px;
+}
+
+.experience-role li::marker {
+    color: #2563eb;
+}
+
+
+/* ---------- Additional Expertise ---------- */
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.additional-card {
+    padding: 25px;
+
+    background: #f7f9fc;
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+}
+
+.additional-card h3 {
+    margin-bottom: 10px;
+    color: #17243a;
+}
+
+.additional-card p {
+    color: #5e6b7c;
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+
+    padding: 48px 50px;
+
+    background: #eaf2ff;
+    border-radius: 16px;
+}
+
+.contact-section h2 {
+    max-width: 700px;
+    margin-bottom: 13px;
+
+    color: #17243a;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.contact-section p:last-child {
+    max-width: 720px;
+    color: #425168;
+}
+
+.contact-button {
+    flex-shrink: 0;
+
+    background: #17243a;
+    color: #ffffff;
+}
+
+.contact-button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    padding: 38px 5%;
+
+    background: #17243a;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 25px;
+}
+
+.footer-content h2 {
+    margin-bottom: 5px;
+    font-size: 1.35rem;
+}
+
+.footer-content p {
+    color: #d7e0ec;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #93c5fd;
+}
+
+.footer-copyright {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 22px;
+
+    border-top: 1px solid #344762;
+
+    color: #bdc9d8;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 30px;
+    }
+
+    .finance-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 38px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .career-highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .expertise-grid,
+    .fund-grid,
+    .additional-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 650px) {
+
+    .page-header {
+        position: static;
+        padding: 0 18px;
+    }
+
+    .header-content {
+        align-items: flex-start;
+        padding: 22px 0;
+    }
+
+    nav {
+        justify-content: flex-start;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 0.88rem;
+    }
+
+    nav .portfolio-link {
+        width: 100%;
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    section {
+        margin-bottom: 22px;
+        scroll-margin-top: 20px;
+    }
+
+    .finance-hero,
+    .content-section,
+    .fund-section,
+    .additional-section,
+    .contact-section {
+        padding: 38px 22px;
+        border-radius: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .career-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .contact-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .expertise-card,
+    .fund-card,
+    .additional-card {
+        padding: 21px;
+    }
+
+    .experience-timeline {
+        padding-left: 20px;
+    }
+
+    .experience-timeline::before {
+        left: 5px;
+    }
+
+    .experience-role {
+        padding-left: 18px;
+        padding-bottom: 36px;
+    }
+
+    .experience-role::before {
+        left: -21px;
+    }
+
+    .role-heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .role-period {
+        align-self: flex-start;
+    }
+
+    .contact-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 32px 20px;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        gap: 12px 18px;
+    }
+
+}

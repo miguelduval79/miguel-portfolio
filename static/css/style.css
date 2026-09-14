@@ -269,6 +269,63 @@ section h2 {
 }
 
 
+/* ---------- Clickable Finance Card ---------- */
+
+.clickable-card {
+    position: relative;
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.clickable-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #2563eb;
+    box-shadow: 0 10px 24px rgba(20, 34, 56, 0.12);
+}
+
+.experience-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 20px;
+
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.experience-more::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border-radius: 12px;
+}
+
+.experience-more:hover {
+    color: #1d4ed8;
+}
+
+.experience-more span {
+    transition: transform 0.2s ease;
+}
+
+.clickable-card:hover .experience-more span {
+    transform: translateX(4px);
+}
+
+.experience-more:focus-visible::after {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+}
+
 /* ---------- Projects ---------- */
 
 .projects-grid {
