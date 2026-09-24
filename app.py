@@ -30,6 +30,11 @@ def accounting():
     return render_template("accounting.html")
 
 
+@app.route("/teaching")
+def teaching():
+    return render_template("teaching.html")
+
+
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json(silent=True) or {}

@@ -2,11 +2,11 @@
 
 # Professional Summary
 
-Miguel E. Medina is a software developer, automation engineer, finance professional, and college professor with more than 20 years of professional experience across financial services, higher education, software development, automation, artificial intelligence, and business management.
+Miguel E. Medina is a Luxembourg-based finance and accounting professional, college professor, software developer, and automation engineer with more than 20 years of professional experience across financial services, higher education, technology, and business management. He is authorized to work in Luxembourg without sponsorship.
 
 Miguel combines a strong finance background gained from Fortune 100 financial institutions with modern software development, web technologies, automation, and AI-powered applications. His work focuses on eliminating repetitive tasks through automation while building practical software solutions for education, finance, marketing, and business operations.
 
-He has over 10 years of college teaching experience and has taught accounting, finance, business management, marketing, and digital marketing at Miami Dade College and Northern Essex Community College.
+He has more than 15 years of college teaching and curriculum-development experience. He has taught finance, accounting, QuickBooks Online, business administration, management, marketing, and digital marketing at Northern Essex Community College and Miami Dade College.
 
 His long-term career goal is to combine finance, software engineering, and artificial intelligence into solutions that improve productivity and decision making.
 
@@ -35,18 +35,47 @@ Primary responsibilities include:
 
 ---
 
+## Senior Accounting Advisor
+
+Intuit
+2018 – May 2026
+
+Responsibilities included:
+
+- Accounting advisory and bookkeeping support for small-business clients
+- Review of U.S. GAAP accounting entries
+- Full accounting cycle support
+- Transaction review and classification
+- Journal entries, reconciliations, and adjustments
+- Quarterly and annual close cycles
+- Financial statement review
+- Investigation and correction of accounting discrepancies
+- Explanation of financial results to clients
+- QuickBooks Online
+
+Miguel also served as a seasonal Tax Accounting Advisor with Intuit from 2016 to 2018.
+
+---
+
 ## Adjunct Professor
 
 Miami Dade College
-2018 – Present
+2015 – Present
 
 Courses taught include:
 
-- Marketing
+- Business Administration
+- Marketing 101
 - Digital Marketing
-- Business Management
+- Management
 
-Teaching focuses on combining academic concepts with real-world business experience and technology.
+Business Administration introduces the major functions of business, including accounting, finance, marketing, management, operations, entrepreneurship, ethics, and the economic environment.
+
+Marketing 101 covers market research, customer behavior, segmentation, targeting, positioning, branding, product strategy, pricing, distribution, promotion, and integrated marketing planning.
+
+Digital Marketing covers digital strategy, websites, search, social media, content, email, online advertising, customer journeys, analytics, conversion measurement, and campaign optimization.
+
+Management covers planning, organizing, leading, and controlling, together with motivation, team development, organizational culture, communication, problem-solving, and managerial decision-making.
 
 Uses software, AI, automation, and business case studies extensively throughout instruction.
 
@@ -55,18 +84,23 @@ Uses software, AI, automation, and business case studies extensively throughout 
 ## Adjunct Professor
 
 Northern Essex Community College
-2015 – Present
+2010 – Present
 
-Courses include:
+Role includes finance and accounting instruction and curriculum development.
+
+Courses and subject areas include:
 
 - Business Finance
 - Introduction to Accounting
-- Introduction to Business
-- Management
-- First Year Experience
-- QuickBooks Online Certification
+- QuickBooks Online Certification Exam Training
 
-Responsible for teaching accounting principles, financial reporting, business operations, and practical applications used in industry.
+Business Finance topics include time value of money, financial-statement and ratio analysis, risk and return, diversification, capital budgeting, cost of capital, and working-capital management.
+
+Accounting topics include bookkeeping, the accounting equation, debits and credits, transaction analysis, journal entries, ledgers, trial balances, adjustments, closing entries, reconciliations, and financial-statement preparation.
+
+QuickBooks Online training includes company setup, chart of accounts, customer and vendor workflows, sales and expenses, bank feeds, reconciliations, accounts receivable, accounts payable, financial reports, and certification-exam preparation.
+
+Curriculum-development work includes learning outcomes, lesson plans, course materials, applied assignments, assessments, rubrics, software activities, and online learning workflows.
 
 ---
 
@@ -231,6 +265,25 @@ Experience includes:
 ---
 
 # Major Software Projects
+
+## AI Professional Training Platform
+
+Status: In development
+
+Purpose:
+
+Create a modular training platform that combines professional instruction with instant AI feedback. The first program is designed to help accountants and finance professionals who already understand their field learn the English terminology used in fund accounting and Luxembourg's international financial-services environment.
+
+Planned capabilities include:
+
+- Technical vocabulary practice
+- Workplace scenarios and simulations
+- Instant AI feedback
+- Adaptive exercises
+- Instructor and institutional reporting
+- An expandable course library for accounting, finance, compliance, marketing, and other professional subjects
+
+---
 
 ## MiguelChat
 
@@ -457,7 +510,7 @@ Current Certifications:
 
 Current Candidate:
 
-- Chartered Alternative Investment Analyst (CAIA)
+- Association of Chartered Certified Accountants (ACCA), candidate with exemptions
 
 ---
 
@@ -467,7 +520,7 @@ English
 
 Spanish (Native)
 
-French (Professional Working Proficiency)
+French (developing proficiency)
 
 ---
 
@@ -497,6 +550,10 @@ Miguel's objective is to build software that combines artificial intelligence, a
 
 He is particularly interested in positions involving:
 
+- Accounting and financial reporting
+- Fund accounting and finance operations
+- Higher education and professional training
+- Curriculum and course development
 - Python Development
 - Backend Development
 - AI Engineering
@@ -548,7 +605,7 @@ Miguel develops AI-powered software using APIs, prompt engineering, workflow aut
 
 Yes.
 
-Miguel spent more than twenty years working in financial services including State Street Corporation, JP Morgan Chase, and BNY Mellon specializing in fund accounting, financial reporting, NAV calculations, reconciliations, and GAAP reporting.
+Miguel has more than twenty years of accounting and financial-services experience across Intuit, State Street Corporation, JPMorgan Chase, and BNY Mellon. His work includes full-cycle accounting, fund accounting, financial reporting, NAV calculations, reconciliations, period-end close, taxation, and U.S. GAAP reporting.
 
 ---
 
@@ -556,7 +613,7 @@ Miguel spent more than twenty years working in financial services including Stat
 
 Yes.
 
-Miguel has more than ten years of college teaching experience teaching accounting, finance, marketing, digital marketing, management, and business courses.
+Miguel has more than fifteen years of college teaching and curriculum-development experience. Since 2010, he has taught finance, accounting, and QuickBooks Online at Northern Essex Community College. Since 2015, he has taught Business Administration, Marketing 101, Digital Marketing, and Management at Miami Dade College.
 
 ---
 

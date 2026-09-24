@@ -1,6 +1,6 @@
 console.log("Animations module loaded.");
 const animatedElements = document.querySelectorAll(
-    "#about, .experience-card, .project-card, .skill-group, #contact"
+    "#about, .experience-card, .teaching-card, .project-card, .skill-group, #contact"
 );
 
 const observer = new IntersectionObserver(

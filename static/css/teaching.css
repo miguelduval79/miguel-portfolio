@@ -1,0 +1,163 @@
+.teaching-hero {
+    background: #edf8f6;
+}
+
+.teaching-hero .section-label,
+.institution-role {
+    color: #0f766e;
+}
+
+.teaching-hero .highlight-card,
+.teaching-expertise-grid .expertise-card {
+    border-color: #c9e7e2;
+}
+
+.teaching-hero .highlight-card {
+    border-left-color: #0f766e;
+}
+
+.teaching-expertise-grid .card-accent {
+    background: #0f766e;
+}
+
+.teaching-philosophy-section {
+    padding: 55px 45px;
+
+    background: #17243a;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(20, 34, 56, 0.08);
+}
+
+.teaching-philosophy-section .section-label {
+    color: #7dd3c7;
+}
+
+.teaching-philosophy-section .section-heading h2 {
+    color: #ffffff;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.philosophy-card {
+    padding: 25px;
+
+    background: #22324b;
+    border: 1px solid #344762;
+    border-radius: 12px;
+}
+
+.philosophy-card h3 {
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.philosophy-card p {
+    color: #d7e0ec;
+}
+
+.institution-list {
+    display: grid;
+    gap: 30px;
+}
+
+.institution-card {
+    padding: 32px;
+
+    background: #f7f9fc;
+    border: 1px solid #dce4ee;
+    border-radius: 14px;
+}
+
+.institution-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-bottom: 18px;
+}
+
+.institution-heading h3 {
+    margin-bottom: 4px;
+    color: #17243a;
+    font-size: 1.55rem;
+}
+
+.institution-role {
+    font-weight: bold;
+}
+
+.institution-summary {
+    max-width: 920px;
+    margin-bottom: 24px;
+    color: #4c5b70;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.course-card {
+    padding: 22px;
+
+    background: #ffffff;
+    border: 1px solid #dce4ee;
+    border-radius: 10px;
+}
+
+.course-card h4 {
+    margin-bottom: 9px;
+    color: #17243a;
+    font-size: 1.08rem;
+}
+
+.course-card p {
+    color: #5e6b7c;
+}
+
+.curriculum-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 900px) {
+    .philosophy-grid,
+    .course-grid,
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .teaching-hero {
+        padding: 32px 18px;
+    }
+
+    .teaching-hero .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .teaching-hero .section-label {
+        font-size: 0.78rem;
+        letter-spacing: 0.8px;
+    }
+
+    .teaching-philosophy-section {
+        padding: 38px 22px;
+        border-radius: 12px;
+    }
+
+    .institution-card {
+        padding: 23px;
+    }
+
+    .institution-heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
